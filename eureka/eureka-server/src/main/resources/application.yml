@@ -1,0 +1,17 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: eureka-server
+eureka:
+  server:
+    enable-self-preservation: false
+    eviction-interval-timer-in-ms: 5000
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
